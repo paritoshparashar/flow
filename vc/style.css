@@ -1,0 +1,160 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+
+header {
+  background: #136c72;
+}
+
+ul.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 20px 0;
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0 auto;
+}
+ul.nav-list li{
+  padding: 0.2rem;
+}
+ul.nav-list li + li {
+  margin-left: 50px;
+}
+
+ul.nav-list li.center{
+  margin-left: auto;
+}
+
+ul.nav-list li.last{
+  margin-left: auto;
+}
+
+ul.nav-list li.color{
+  background: #fff;
+  color: #136c72;
+  border-radius: 2rem;
+}
+
+ul.nav-list li img{
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.row,
+.below {
+  /* display: flex => flex container */
+  display: flex;
+  justify-content: space-between;
+
+  /* can't use yet */
+  /* gap: 100px; */
+}
+
+.col {
+  /* these are now flex items */
+  width: 100%;
+}
+
+.col + .col {
+  margin-left: 30px;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__text {
+  width: 62%;
+}
+
+.hero__img {
+  width: 32%;
+  align-self: flex-start;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+.below {
+  margin-top: 60px;
+}
+.below h1 {
+  color: #136c72;
+}
+.first {
+  width: 62%;
+}
+.first h1 {
+  font-size: 1.8rem;
+}
+.second {
+  width: 32%;
+  background: #136c72;
+}
+.second h1 {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.second p {
+  color: white;
+  text-align: center;
+  margin: 10px 10px;
+  font-weight: 10;
+}
